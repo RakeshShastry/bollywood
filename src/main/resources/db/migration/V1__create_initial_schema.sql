@@ -1,5 +1,5 @@
 CREATE TABLE `movies` (
-  `Id`      INT           NOT NULL      AUTO_INCREMENT,
+  `id`      INT           NOT NULL      AUTO_INCREMENT,
   `version` INT NOT NULL  DEFAULT       0,
   `title`   VARCHAR(45)   NOT NULL,
   `watched` TINYINT       NULL DEFAULT  0,
@@ -8,4 +8,4 @@ CREATE TABLE `movies` (
   `length`  INT           NULL,
   `created` TIMESTAMP     NULL DEFAULT now(),
   `modified` TIMESTAMP     NULL DEFAULT now(),
-  PRIMARY KEY (`Id`));
+  PRIMARY KEY (`id`));

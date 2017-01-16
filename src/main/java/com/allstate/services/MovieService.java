@@ -5,6 +5,8 @@ import com.allstate.repositories.IMovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
+
 @Service
 public class MovieService {
     private IMovieRepository repository;
@@ -17,4 +19,6 @@ public class MovieService {
     public Movie Create(Movie m){
         return this.repository.save(m);
     }
+
+
 }
